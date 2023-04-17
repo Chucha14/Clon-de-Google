@@ -1,0 +1,134 @@
+.contenedor{
+    display:grid;
+    background-color: #FFFFFF;
+    align-self: center;
+    grid-template-columns: [x0]1fr [x1]1fr [x2]1fr [x3]1fr [x4];
+    grid-template-rows: [y0]1fr [y1]2fr [y2]1fr [y3]1fr [y4]1fr [y5]1.7fr [y6]; 
+}
+
+body{
+    margin: 0%;
+    font-family:'Roboto';
+}
+
+header{
+    margin-top: 15px;
+    grid-column: x3/x4;
+    grid-row: y0/y1;
+    font-size: small;
+    display:flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+main{
+    grid-column: x1/x3;
+    grid-row: y1/y2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#buscador{
+    grid-column: x1/x3;
+    grid-row: y2/y3;
+    display: flex;
+    align-items: top;
+    justify-content: center;
+}
+
+#botones_de_busqueda{
+    grid-column: x1/x3;
+    grid-row: y3/y4;
+    display:flex;
+    justify-content: center;
+}
+
+footer{
+    grid-column: x0/x4;
+    grid-row: y5/y6;
+    display: flex;
+    flex-wrap: wrap-reverse;
+    flex-direction: column;
+    margin-top:28px ;
+}
+
+#pie-de-pag-1{
+    background-color: #F2F2F2;
+    color: #707581;
+    padding: 15px 30px;
+  
+}
+
+#pie-de-pag-2{
+    background-color: #F2F2F2;
+    color: #707581;
+    padding: 15px 26px;
+    font-size:14px;
+    border: 1.5px solid #EAEAEA;
+}
+
+.btn-search{
+    background-color: #F8F9FA;
+    border: none;
+    height:35px;
+    padding: 1px 15px;
+
+}
+
+form{
+    border: 1.5px solid #EAEAEA;
+    display: flex;
+    align-items: center;
+    border-radius: 28px;
+    padding: 14px;
+    max-height: 18px;
+}
+
+#input-search{
+    border: none;
+    width: 415px;
+}
+
+#logo{
+    max-width: 300px;
+    max-height: 150px;
+}
+
+a{
+    color: black;
+    text-decoration: none;
+    font-weight: 400;
+    margin: 0px 10px;
+}
+
+.link-footer{
+    color: #707581;
+}
+
+#icono{
+    padding: 10px;
+    margin: 5px;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+#icono:hover{
+    background-color: #F0F0F0;
+    border: 10px;
+    border-radius: 50px;
+}
+
+.btn-search:hover{
+    border:1px solid #EAEAEA;
+    border-bottom: 3px solid #EAEAEA;
+    border-radius: 3px;
+}
+
+form:hover{
+    border:2px solid #EAEAEA;
+    border-bottom: 4px solid #EAEAEA;
+    border-radius: 28px;
+}
